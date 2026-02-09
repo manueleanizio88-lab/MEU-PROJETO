@@ -1,0 +1,18 @@
+<section class="banner">
+    <h1>Nossas Plantas</h1>
+    <p>Traga vida para o seu ambiente</p>
+</section>
+
+<div class="vitrine">
+    {{#each plantas}}
+    <div class="card-planta">
+        <div class="tag-especie">{{this.especie}}</div>
+        <img src="{{this.imagemUrl}}" alt="{{this.nome}}" style="width: 200px; height: auto;">
+        <h3>{{this.nome}}</h3>
+        <p class="preco">R$ {{this.preco}}</p>
+        <button class="btn-comprar">Comprar Agora</button>
+    </div>
+    {{/each}}
+</div>
+
+
