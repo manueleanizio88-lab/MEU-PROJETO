@@ -1,0 +1,12 @@
+<div class="vitrine">
+    {{#each plantas}}
+    <div class="card-planta">
+        <img src="{{this.imagemUrl}}" alt="{{this.nome}}">
+        <h3>{{this.nome}}</h3>
+        <p class="preco">R$ {{this.preco}}</p>
+        <a href="/carrinho?nome={{this.nome}}&preco={{this.preco}}&imagem={{this.imagemUrl}}" class="btn-comprar">
+            Comprar
+        </a>
+    </div>
+    {{/each}}
+</div>

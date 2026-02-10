@@ -1,0 +1,277 @@
+:root {
+    --verde-cobasi: #81b71a;
+    --fundo: #f5f5f2;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--fundo);
+    margin: 0;
+}
+
+.vitrine {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px 5%;
+}
+
+.card-planta {
+    background: white;
+    border-radius: 25px;
+    width: 260px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.selo-azul {
+    background-color: #e0f7f9;
+    color: #00acc1;
+    font-size: 11px;
+    padding: 4px 12px;
+    border-radius: 12px;
+}
+
+.img-container {
+    text-align: center;
+    position: relative;
+    padding: 20px 0;
+}
+
+.img-container img {
+    max-width: 160px;
+    height: auto;
+}
+
+.btn-float-carrinho {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: white;
+    border: none;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.link-nome { text-decoration: none; color: #333; }
+.marca { color: #aaa; font-size: 12px; margin: 10px 0 5px; }
+h3 { font-size: 14px; margin: 0; height: 40px; overflow: hidden; }
+
+.preco-box { margin-top: 15px; }
+.legenda { font-size: 12px; color: #666; margin: 0; }
+.valor { font-size: 20px; font-weight: bold; color: #333; margin: 0; }
+
+.btn-comprar {
+    background-color: var(--verde-cobasi);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 25px;
+    width: 100%;
+    font-weight: bold;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+/* Configurações Globais */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f5f2; /* Fundo levemente cinza */
+    margin: 0;
+    color: #333;
+}
+
+/* Vitrine e Cards (Quadrados das Plantas) */
+.vitrine {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px 5%;
+    justify-content: center;
+}
+
+.card-planta {
+    background: #ffffff;
+    border-radius: 25px; 
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #eee;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.card-planta:hover {
+    transform: translateY(-5px); /* Efeito de flutuar ao passar o mouse */
+}
+
+.card-planta img {
+    width: 100%;
+    height: auto;
+    max-width: 180px;
+    border-radius: 15px;
+}
+
+.btn-comprar {
+    background-color: #81b71a; 
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 25px;
+    font-weight: bold;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+/* Rodapé Estilizado */
+.site-footer {
+    background-color: #ffffff;
+    border-top: 3px solid #81b71a; 
+    padding: 40px 10% 20px;
+    margin-top: 50px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-column h3 {
+    color: #81b71a;
+    margin-bottom: 15px;
+}
+
+.footer-column p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #f0f0f0;
+    font-size: 12px;
+    color: #999;
+}
+
+/* Centralização total na tela */
+.checkout-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; /* Garante que fique centralizado verticalmente */
+    padding: 20px;
+    background-color: #f5f5f2;
+}
+
+.checkout-card {
+    background: white;
+    border-radius: 40px; /* Bordas bem redondas */
+    padding: 35px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.checkout-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.resumo-produto-box {
+    background: #f9f9f9;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.img-resumo {
+    width: 90px;
+    height: 90px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.valor-verde {
+    color: #81b71a;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Estilo dos Botões e Seletor */
+.checkout-acoes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.qtd-seletor input {
+    width: 60px;
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.btn-adicionar-carrinho {
+    background-color: #81b71a; /* Verde Cobasi */
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-adicionar-carrinho:hover {
+    background-color: #6a9615;
+    transform: scale(1.02);
+}
+
+.link-voltar {
+    color: #888;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.link-voltar:hover {
+    text-decoration: underline;
+}
+
+@keyframes pulsar {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); color: #81b71a; }
+    100% { transform: scale(1); }
+}
+
+.animar-carrinho {
+    animation: pulsar 0.5s ease-in-out 2;
+}
